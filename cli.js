@@ -45,7 +45,7 @@ program
       install = `${install}##### Node
 
 \`\`\`sh
-npm i ${pkg.preferGlobal ? ' -g' : ' '}${pkg.name}
+npm i ${pkg.preferGlobal ? '-g ' : ' '}${pkg.name}
 \`\`\`
 `
     }

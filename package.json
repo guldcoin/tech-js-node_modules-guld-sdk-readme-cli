@@ -1,13 +1,13 @@
 {
   "name": "guld-sdk-readme-cli",
   "version": "0.1.0",
-  "description": "Guld SDK readme generator.",
+  "description": "Guld SDK readme generator. Generates guld-style README.md files like this one using package.json, .travis.yml, and pre-existing README.md files.",
   "bin": {
     "guld-sdk-readme": "cli.js"
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "echo 'no tests configured'",
+    "test": "npm run lint",
     "lint": "eslint *.js*",
     "fix": "eslint --fix *.js*"
   },
@@ -32,7 +32,7 @@
     "pre-commit": "^1.2.2"
   },
   "pre-commit": [
-    "lint"
+    "test"
   ],
   "readme": "README.md",
   "engines": {
