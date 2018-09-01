@@ -1,6 +1,6 @@
 {
   "name": "guld-sdk-readme-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Guld SDK readme generator. Uses using package.json, .travis.yml, and pre-existing README.md files to generate guld-style README.md files like this project's.",
   "bin": {
     "guld-sdk-readme": "cli.js"
