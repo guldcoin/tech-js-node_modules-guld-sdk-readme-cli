@@ -7,6 +7,7 @@ var travis
 var readme
 var readmefd
 var readmepath = `${process.cwd()}/README.md`
+
 /* eslint-disable no-console */
 try {
   travis = fs.readFileSync(`${process.cwd()}/.travis.yml`, 'utf-8')
