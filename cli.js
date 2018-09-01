@@ -78,8 +78,8 @@ require('${pkg.name}')
 \`\`\`
 `
     } else {
-      var re = new RegExp('### Usage[#\\s\\w=+*,(){}<>$`"\'./:@-]*(### )*')
-      usage = re.exec(readme)[0]
+      var re = new RegExp('### Usage[#\\s\\w=+*,(){}<>$`"\'./:@-]*(?=(#{1,3} ))')
+      usage = re.exec(readme)[0].replace(/##$/, '')
     }
     if (pkg.browser) {
       install = `${install}##### Browser
