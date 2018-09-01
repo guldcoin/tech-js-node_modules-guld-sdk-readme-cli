@@ -38,7 +38,7 @@ program
     if (travis) {
       badges = `${badges} [![Build Status](https://travis-ci.org/guldcoin/tech-js-node_modules-${pkg.name}.svg?branch=guld)](https://travis-ci.org/guldcoin/tech-js-node_modules-${pkg.name})`
     }
-    badges = `${badges} [![source](https://img.shields.io/badge/source-bitbucket-blue.svg)](https://bitbucket.org/guld/tech-js-node_modules-${pkg.name}) [![issues](https://img.shields.io/badge/issues-bitbucket-yellow.svg)](https://bitbucket.org/guld/tech-js-node_modules-${pkg.name}/issues)`
+    badges = `${badges} [![source](https://img.shields.io/badge/source-bitbucket-blue.svg)](https://bitbucket.org/guld/tech-js-node_modules-${pkg.name}) [![issues](https://img.shields.io/badge/issues-bitbucket-yellow.svg)](https://bitbucket.org/guld/tech-js-node_modules-${pkg.name}/issues) [![documentation](https://img.shields.io/badge/docs-guld.tech-green.svg)](https://guld.tech/${pkg.hasOwnProperty('bin') ? 'cli' : 'lib'}/${pkg.name}.html)`
     var install = `### Install
 
 `
